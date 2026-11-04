@@ -38,7 +38,7 @@ Las reglas de entrada utilizadas son:
 | TCP | 80 | Acceso mediante HTTP |
 | TCP | 443 | Acceso mediante HTTPS |
 
-### 2.2. Asociación de la Elastic IP
+### 2.2. Asociación de la IP Elastica
 
 He asociado una dirección Elastic IP a la instancia:
 
@@ -744,26 +744,41 @@ Estos problemas permitieron comprobar diferentes aspectos de la configuración y
 
 ## 17. Evidencias de la práctica
 
-He recopilado las capturas de pantalla del proceso en el documento `Capturas2.docx`.
+### 1. Instancia EC2 creada
+![Instancia EC2](evidencias/image1.png)
 
-Las doce capturas corresponden a las siguientes comprobaciones:
+### 2. Estado del servicio Apache
+![Apache activo](evidencias/image2.png)
 
-| Captura | Evidencia |
-|---|---|
-| 01 | Instancia EC2 y dirección Elastic IP. |
-| 02 | Estado del servicio Apache en ejecución. |
-| 03 | Segunda ejecución del script de instalación y detección de Apache instalado. |
-| 04 | Ejecución del script de generación del certificado y configuración HTTPS. |
-| 05 | Información del certificado, fechas de validez y SAN. |
-| 06 | Comprobación de sintaxis de Apache: `Syntax OK`. |
-| 07 | Apache escuchando en los puertos 80 y 443. |
-| 08 | Redirección HTTP con respuesta 301. |
-| 09 | Respuesta HTTPS 200 mediante la IP pública. |
-| 10 | Respuesta HTTPS 200 mediante el dominio desde Windows. |
-| 11 | Advertencia de privacidad de Chrome por el certificado autofirmado. |
-| 12 | Página predeterminada de Apache cargada correctamente. |
+### 3. Comprobación de instalación de Apache
+![Apache instalado](evidencias/image3.png)
 
-Las capturas se conservan tal como fueron realizadas, sin modificar su contenido.
+### 4. Generación e instalación del certificado autofirmado
+![Configuración del certificado](evidencias/image4.png)
+
+### 5. Datos del certificado y nombres alternativos
+![Datos del certificado](evidencias/image5.png)
+
+### 6. Comprobación de configuración de Apache
+![Syntax OK](evidencias/image6.png)
+
+### 7. Puertos HTTP y HTTPS escuchando
+![Puertos 80 y 443](evidencias/image7.png)
+
+### 8. Redirección de HTTP a HTTPS
+![Redirección HTTPS](evidencias/image8.png)
+
+### 9. Prueba de acceso HTTPS mediante IP
+![Prueba HTTPS por IP](evidencias/image9.png)
+
+### 10. Prueba de acceso HTTPS mediante dominio
+![Prueba HTTPS por dominio](evidencias/image10.png)
+
+### 11. Aviso del certificado autofirmado en Chrome
+![Aviso de seguridad](evidencias/image11.png)
+
+### 12. Página predeterminada de Apache
+![Página de Apache](evidencias/image12.png)
 
 ## 18. Subida de los cambios a GitHub
 
