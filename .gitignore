@@ -1,0 +1,11 @@
+# Variables privadas
+scripts/.env
+
+# Claves privadas y certificados
+*.key
+*.pem
+
+# Archivos temporales
+*.bak
+*.swp
+*~
