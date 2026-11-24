@@ -11,7 +11,7 @@ fi
 
 echo "Instalando Apache..."
 
-sudo apt-get update -y
+sudo apt-get update
 sudo DEBIAN_FRONTEND=noninteractive apt-get install -y apache2
 
 # Habilitar y arrancar Apache
